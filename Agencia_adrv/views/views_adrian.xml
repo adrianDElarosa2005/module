@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!--ACCION PARA EJECUTAR EL MODELO DE LA APLICACION-->
+	<record id="action_agencia" model="ir.actions.act_window">
+		<field name="name">Ejecutar modelo</field>
+		<field name="res_model">agencia.model</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	<!--MENU PRINCIPAL-->
+	<menuitem id="menu_principal" name="Agencia ADRV" sequence="1"/>
+
+	<!--SUBMENU DENTRO DEL MENU-->
+	<menuitem id="submenu_adrian" name="Agencia ADRV Submenu" parent="menu_principal" action="action_agencia" sequence="1"/>
+</odoo>
